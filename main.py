@@ -3,7 +3,6 @@ import os
 import re
 
 client = discord.Client()
-#numbers = re.compile(r'^([\s\d]+)$');
 
 @client.event
 async def on_ready():
@@ -14,11 +13,11 @@ async def on_message(message):
     
 
   
-  messageIn = message.content
-  messageIn = messageIn.replace(" ","")
-  if re.search(r"\([0-9]+,[0-9]+\)", messageIn):
-      finalMessage = ("Looks like you are talking about cordinates on r/Place! Allow me to link them! https://www.reddit.com/r/place/?cx="+messageIn[messageIn.find('(') + 1:messageIn.find(',')]+"&cy="+messageIn[messageIn.find(',') +1:messageIn.find(')')]+"&px=10")
-      await message.channel.send(finalMessage)
+  messageIn = message.content #imports message
+  messageIn = messageIn.replace(" ","") #removes spcaes
+  if re.search(r"\([0-9]+,[0-9]+\)", messageIn): #checks if message matches format
+      finalMessage = ("Looks like you are talking about coordinates on r/Place! Allow me to link them! https://www.reddit.com/r/place/?cx="+messageIn[messageIn.find('(') + 1:messageIn.find(',')]+"&cy="+messageIn[messageIn.find(',') +1:messageIn.find(')')]+"&px=10") #Generates message
+      await message.channel.send(finalMessage) #sends message
   return
 
 client.run(os.getenv("apikey"))
