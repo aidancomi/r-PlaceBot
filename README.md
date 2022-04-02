@@ -5,7 +5,7 @@ Created on April 1st by Aidan Comi
 Created to help Discord servers share cordinates for the [r/Place](https://reddit.com/r/place) subreddit. This is my first discord bot, and I'm not experienced in Python at all, so please open an issue if you notice any problems at all!
 
 ### How it works
-The bot will search through new messages that contains what it suspects are r/Place coordinates, if found it will send a message with the corresponding link.
+The bot will search through new messages that contains what it suspects are r/Place coordinates, if found it will send a message with the corresponding link. To prevent false positives, the bot will only recognize coordinates contained in parentheses. Ex. (129, 234)
 
 ### How to use
 Simply click the link [here](https://discord.com/api/oauth2/authorize?client_id=959523533493518356&scope=bot&permissions=3072) to add to your server.
