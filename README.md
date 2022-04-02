@@ -15,3 +15,5 @@ This will always be open-source as long as I run the project. I am currently hos
 
 ### Contact
 Please feel free to email me at [placebot@comidev.com](mailto:placebot@comidev.com) for any questions at all! I am a college student and this is a side project, so please excuse any mistakes!
+
+Note: r/Place Bot was not created or is endorsed by Reddit or r/Place.
