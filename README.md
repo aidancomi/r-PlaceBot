@@ -1,6 +1,8 @@
 # r/Place Bot
 Created on April 1st by Aidan Comi
 
+NOTE: The bot is now offline, you can still install but it will do nothing. If r/Place returns I will possibly bring it back.
+
 ### Inspriation
 Created to help Discord servers share cordinates for the [r/Place](https://reddit.com/r/place) subreddit. This is my first discord bot, and I'm not experienced in Python at all, so please open an issue if you notice any problems at all!
 
